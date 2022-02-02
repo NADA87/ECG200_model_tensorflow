@@ -13,4 +13,6 @@ run command : docker-compose up
 
 to see evaluation plot : open http://localhost:8050/ in browser (plot using plotly dash)
 
-### Refer to Train_ECG_200.ipynb to see training script 
+
+
+* Refer to Train_ECG_200.ipynb to see training script
