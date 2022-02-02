@@ -1,0 +1,37 @@
+# FROM arm64v8/python:3.8.8
+
+# WORKDIR /app
+
+# COPY . /app
+
+# RUN pip install --upgrade pip
+
+# #RUN pip install https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha3/tensorflow_macos-0.1a3-cp38-cp38-macosx_11_0_arm64.whl
+
+# #RUN pip install  https://github.com/apple/tensorflow_macos/releases/download/v0.1alpha3/tensorflow_addons_macos-0.1a3-cp38-cp38-macosx_11_0_arm64.whl 
+
+# #RUN pip install tensorflow-macos
+# RUN pip install tensorflow-metal
+# RUN pip install tensorflow_addons
+
+# RUN pip install -r train_requirement.txt
+
+# CMD ["python","train.py"]
+
+
+
+FROM tensorflow/tensorflow:2.7.0
+#--platform=linux/x86_64 python:3.8.8
+
+WORKDIR /app
+
+COPY . /app
+
+RUN python -m pip install --upgrade pip
+
+#RUN pip install tensorflow==2.7.0
+RUN pip install tensorflow_addons==0.15.0
+RUN pip install -r train_requirement.txt
+CMD ["python","train.py"]
+
+
