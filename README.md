@@ -7,9 +7,7 @@ Clone
 
 Start Docker Desktop
 
-cd to this folder 
-
-run command : docker-compose up
+From terminal cd to this folder and run command : docker-compose up
 
 to see evaluation plot : open http://localhost:8050/ in browser (plot using plotly dash)
 <br /><br /><br /><br /><br />
