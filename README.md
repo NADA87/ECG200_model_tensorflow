@@ -1,2 +1,14 @@
 # ECG200_model_tensorflow
-Preprocess train evaluate model on Docker container (Docker compose) 
+Preprocess, train, evaluate model on Docker container (Docker compose) 
+
+## User guide
+
+Clone
+
+Start Docker Desktop
+
+cd to this folder 
+
+run command : docker-compose up
+
+to see evaluation plot : open http://localhost:8050/ in browser (plot using plotly dash)
