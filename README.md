@@ -1,5 +1,5 @@
 # ECG200_model_tensorflow
-Preprocess, train, evaluate model on Docker containers (Docker compose) 
+Preprocess, train, evaluate model on the Docker containers (Docker compose) 
 
 ## User guide
 
